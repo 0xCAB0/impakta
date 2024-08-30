@@ -43,9 +43,9 @@ export default siteConfig({
   // example:
   //
    pageUrlOverrides: {
-     '/members': '83e616356bfc469f99504021a713f0dd',
+     '/members': '83e616356bfc469f99504021a713f0dd'
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-   }
+   },
   pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
