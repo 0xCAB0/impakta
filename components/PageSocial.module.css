@@ -86,6 +86,13 @@
   border-color: #2795e9;
 }
 
+.reddit .actionBgPane {
+  background: #FF4500;
+}
+.reddit:hover {
+  border-color: #FF4500;
+}
+
 .linkedin .actionBgPane {
   background: #0077b5;
 }

@@ -8,8 +8,10 @@ import { Breadcrumbs, Header, Search, useNotionContext } from 'react-notion-x'
 
 import { isSearchEnabled, navigationLinks, navigationStyle } from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
+import { FaReddit } from '@react-icons/all-files/fa/FaReddit'
 
 import styles from './styles.module.css'
+import * as config from '@/lib/config'
 
 const ToggleThemeButton = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
@@ -81,6 +83,17 @@ export const NotionPageHeader: React.FC<{
           <ToggleThemeButton />
 
           {isSearchEnabled && <Search block={block} title={null} />}
+          <div className={styles.social}>
+        {config.reddit && (
+          <a
+            className={styles.reddit}
+            href={`https://www.reddit.com/r/${config.reddit}`}
+            title={`r/${config.reddit}`}
+            rel='me'
+          >
+            <FaReddit />
+          </a>
+        )}</div>
         </div>
       </div>
     </header>

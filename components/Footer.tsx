@@ -7,6 +7,7 @@ import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
+import { FaReddit } from '@react-icons/all-files/fa/FaReddit'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
@@ -36,8 +37,10 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright {currentYear} {config.author}</div>
-
+      <div className={styles.copyright}>
+        Copyright {currentYear} <b>{config.author}</b>
+        {config.license && ` This work is licensed under ${config.license}`}
+      </div>
       <div className={styles.settings}>
         {hasMounted && (
           <a
@@ -53,6 +56,17 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
+        {config.reddit && (
+          <a
+            className={styles.reddit}
+            href={`https://www.reddit.com/r/${config.reddit}`}
+            title={`r/${config.reddit}`}
+            rel='me'
+          >
+            <FaReddit />
+          </a>
+        )}
+
         {config.twitter && (
           <a
             className={styles.twitter}
@@ -75,6 +89,8 @@ export const FooterImpl: React.FC = () => {
             <FaMastodon />
           </a>
         )}
+
+        
 
         {config.zhihu && (
           <a
