@@ -12,15 +12,16 @@ export default siteConfig({
   name: 'El blog de ImpaKta',
   domain: 'www.impakta.org',
   author: 'Equipo ImpaKta',
+  license: 'CC BY-NC 4.0',
 
   // open graph metadata (optional)
   description: 'Impakta team blog',
 
   // social usernames (optional)
   reddit: 'impakta',
-  //twitter: 'transitive_bs',
-  //github: 'transitive-bullshit',
-  //linkedin: 'fisch2',
+  twitter: 'transitive_bs',
+  github: 'transitive-bullshit',
+  linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`

@@ -37,8 +37,10 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright {currentYear} {config.author}</div>
-
+      <div className={styles.copyright}>
+        Copyright {currentYear} <b>{config.author}</b>
+        {config.license && ` This work is licensed under ${config.license}`}
+      </div>
       <div className={styles.settings}>
         {hasMounted && (
           <a

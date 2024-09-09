@@ -12,6 +12,7 @@ export const PageAside: React.FC<{
   recordMap: ExtendedRecordMap
   isBlogPost: boolean
 }> = ({ block, recordMap, isBlogPost }) => {
+
   if (!block) {
     return null
   }
@@ -22,7 +23,7 @@ export const PageAside: React.FC<{
     if (!tweet) {
       return null
     }
-
+    
     return <PageActions tweet={tweet} />
   }
 
