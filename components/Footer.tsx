@@ -56,6 +56,17 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
+        {config.reddit && (
+          <a
+            className={styles.reddit}
+            href={`https://www.reddit.com/r/${config.reddit}`}
+            title={`r/${config.reddit}`}
+            rel='me'
+          >
+            <FaReddit />
+          </a>
+        )}
+
         {config.twitter && (
           <a
             className={styles.twitter}
@@ -79,16 +90,7 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.reddit && (
-          <a
-            className={styles.reddit}
-            href={`https://www.reddit.com/r/${config.reddit}`}
-            title={`r/${config.reddit}`}
-            rel='me'
-          >
-            <FaReddit />
-          </a>
-        )}
+        
 
         {config.zhihu && (
           <a
