@@ -106,6 +106,10 @@
   color: #c9510c;
 }
 
+.reddit:hover {
+  color: #FF4500;
+}
+
 .youtube:hover {
   color: #ff0000;
 }

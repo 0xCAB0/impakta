@@ -7,6 +7,7 @@ import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
+import { FaReddit } from '@react-icons/all-files/fa/FaReddit'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
@@ -73,6 +74,17 @@ export const FooterImpl: React.FC = () => {
             rel='me'
           >
             <FaMastodon />
+          </a>
+        )}
+
+        {config.reddit && (
+          <a
+            className={styles.reddit}
+            href={`https://www.reddit.com/r/${config.reddit}`}
+            title={`r/${config.reddit}`}
+            rel='me'
+          >
+            <FaReddit />
           </a>
         )}
 

@@ -17,6 +17,7 @@ export default siteConfig({
   description: 'Impakta team blog',
 
   // social usernames (optional)
+  reddit: 'impakta',
   //twitter: 'transitive_bs',
   //github: 'transitive-bullshit',
   //linkedin: 'fisch2',
