@@ -39,8 +39,8 @@ export const FooterImpl: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.copyright}>
         Copyright {currentYear} <b>{config.author}</b>
-        {config.license && ` This work is licensed under ${config.license}`}
       </div>
+
       <div className={styles.settings}>
         {hasMounted && (
           <a
@@ -55,8 +55,12 @@ export const FooterImpl: React.FC = () => {
         )}
       </div>
 
+      <div className={styles.copyright}>
+      {config.license && ` This work is licensed under ${config.license}`}
+      </div>
+
       <div className={styles.social}>
-        {config.reddit && (
+        {/* {config.reddit && (
           <a
             className={styles.reddit}
             href={`https://www.reddit.com/r/${config.reddit}`}
@@ -65,7 +69,7 @@ export const FooterImpl: React.FC = () => {
           >
             <FaReddit />
           </a>
-        )}
+        )} */}
 
         {config.twitter && (
           <a

@@ -51,13 +51,13 @@
   padding: 8px;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .copyright {
-  font-size: 80%;
+  /* font-size: 80%; */
   padding: 0.5em;
 }
 
