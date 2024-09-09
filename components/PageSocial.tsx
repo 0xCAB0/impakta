@@ -81,6 +81,9 @@ const socialLinks: SocialLink[] = [
   }
 ].filter(Boolean)
 
+console.log("socialLinks", socialLinks);
+
+
 export const PageSocial: React.FC = () => {
   return (
     <div className={styles.pageSocial}>
