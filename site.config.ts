@@ -12,6 +12,7 @@ export default siteConfig({
   name: 'El blog de ImpaKta',
   domain: 'www.impakta.org',
   author: 'Equipo ImpaKta',
+  email: 'info@impakta.org',
   license: 'CC BY-NC 4.0',
 
   // open graph metadata (optional)
@@ -28,7 +29,8 @@ export default siteConfig({
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: 'https://impakta-blog.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe927f761-65f8-437d-89dc-b7577676e57e%2Fb75737b2-9a9e-42d9-a013-a24323120c95%2Flogo-impakta-modified.png?table=block&id=28fca661-17df-44d3-87e6-bbba00c7e245&spaceId=e927f761-65f8-437d-89dc-b7577676e57e&width=250&userId=&cache=v2',
+  defaultPageIcon:
+    'https://impakta-blog.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe927f761-65f8-437d-89dc-b7577676e57e%2Fb75737b2-9a9e-42d9-a013-a24323120c95%2Flogo-impakta-modified.png?table=block&id=28fca661-17df-44d3-87e6-bbba00c7e245&spaceId=e927f761-65f8-437d-89dc-b7577676e57e&width=250&userId=&cache=v2',
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
@@ -44,23 +46,23 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-   pageUrlOverrides: {
-     '/members': '83e616356bfc469f99504021a713f0dd'
-  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-   },
+  pageUrlOverrides: {
+    '/members': '83e616356bfc469f99504021a713f0dd'
+    //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
+  },
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
   // navigationStyle: 'default'
-   navigationStyle: 'custom',
-   navigationLinks: [
-     {
-       title: 'Members',
-       pageId: '83e616356bfc469f99504021a713f0dd'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'Members',
+      pageId: '83e616356bfc469f99504021a713f0dd'
     }
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-   ]
+    //   {
+    //     title: 'Contact',
+    //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    //   }
+  ]
 })

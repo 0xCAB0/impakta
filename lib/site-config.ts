@@ -7,6 +7,7 @@ export interface SiteConfig {
   name: string
   domain: string
   author: string
+  email?: string
   license?: string
   description?: string
   language?: string
@@ -17,8 +18,8 @@ export interface SiteConfig {
   newsletter?: string
   youtube?: string
   zhihu?: string
-  mastodon?: string;
-  reddit?: string;
+  mastodon?: string
+  reddit?: string
 
   defaultPageIcon?: string | null
   defaultPageCover?: string | null
