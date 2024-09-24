@@ -1,3 +1,4 @@
+/* eslint-disable react/no-string-refs */
 import * as React from 'react'
 
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'

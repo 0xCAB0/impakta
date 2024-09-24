@@ -47,8 +47,8 @@ export default siteConfig({
   // example:
   //
   pageUrlOverrides: {
-    '/members': '83e616356bfc469f99504021a713f0dd'
-    //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
+    '/members': '83e616356bfc469f99504021a713f0dd',
+    '/posts': 'c015ff87a5aa44e0903c25fe12e9209f'
   },
 
   // whether to use the default notion navigation style or a custom one with links to
@@ -57,12 +57,12 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: 'Members',
+      title: 'Miembros',
       pageId: '83e616356bfc469f99504021a713f0dd'
+    },
+    {
+      title: 'Artículos',
+      pageId: 'c015ff87a5aa44e0903c25fe12e9209f'
     }
-    //   {
-    //     title: 'Contact',
-    //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-    //   }
   ]
 })
